@@ -85,6 +85,24 @@ showName("Sneha","Vantamuri");
   
   The this reference ALWAYS refers to (and holds the value of) an object—a singular object—and it is usually used inside a function or a method, although it can be used outside a function in the global scope.
   Note that when we use strict mode, this holds the value of undefined in global functions and in anonymous functions that are not bound to any object.
+  this has the value of the invoking object in most circumstances.
+  
+  http://javascriptissexy.com/understand-javascripts-this-with-clarity-and-master-it/
+  
+  this inside the anonymous function cannot access the outer function’s this, so it is bound to the global window object, when strict mode is not being used.
+  
+  You can change the context of this using call(), apply() and bind() methods.
+
+
+
+
+
+
+
+
+
+
+
 Browser HTTP request life cycle
 1.	User types an url in the address bar of the browser
 2.	Eg : http://www.aspspider.com/tutorials.aspx.
