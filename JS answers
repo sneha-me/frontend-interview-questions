@@ -1,4 +1,69 @@
-What is ECMA SCRIPT?
+1) What is ECMA SCRIPT?
   ECMAScript is a standard for writing scripting languages.
   Languages like Javascript are based on the ECMAScript standard.
   ECMA means European Computer Manufacturer’s Association
+2)	What is the Document Object Model(DOM)?
+The Document Object Model (DOM) is a programming API for HTML and XML documents. It defines the logical structure of documents and the way a document is accessed and manipulated. Tree like structure.
+
+3)	What's the different between undefined and null? It's better to say something about why we need undefined if we have had null.
+Undefined – if u try to access a variable without declaring it / if u have declared it but not assigned it to any value, u ll get result as undefined. By default browser assigns this value in both the cases. It is also a primitive datatype.
+Null – is a primitive datatype with only one value as null. You need to assign a null value to a variable explicitly. Used as a representation of no value.
+undefined is a type itself (undefined) while null is an object.
+
+4)	What's JavaScript strict mode? What's the intent for it? What does it do? How do you use it?
+“use strict” : Defines that JavaScript code should be executed in "strict mode"
+It is directive introduced in ES5. It is not a statement but a literal expression ignored by earlier versions of JS.
+
+With strict mode, you can not, for example, use undeclared variables.
+
+“use strict”;
+X= 2; // throws an error as X is not declared.
+
+Strict mode makes several changes to normal JavaScript semantics. First, strict mode eliminates some JavaScript silent errors by changing them to throw errors. Second, strict mode fixes mistakes that make it difficult for JavaScript engines to perform optimizations: strict mode code can sometimes be made to run faster than identical code that's not strict mode. Third, strict mode prohibits some syntax likely to be defined in future versions of ECMAScript.
+
+
+
+5)	What is AJAX? What the work flow for AJAX? How to implement CORS? What's the difference synchronous and asynchronous for JavaScript?
+
+AJAX : Asynchronous JavaScript and XML. lets you update portions of a page based upon user events.  
+In a nutshell, it is the use of the XMLHttpRequest object to communicate with server-side scripts. It can send as well as receive information in a variety of formats, including JSON, XML, HTML, and even text files. AJAX’s most appealing characteristic, however, is its "asynchronous" nature, which means it can do all of this without having to refresh the page.
+
+CORS – Cross Origin Resource Sharing – enables secure cross domain data transfers.
+The Cross-Origin Resource Sharing standard works by adding new HTTP headers that allow servers to describe the set of origins that are permitted to read that information using a web browser.
+
+The spec defines a set of headers that allow the browser and server to communicate about which requests are (and are not) allowed. CORS continues the spirit of the open web by bringing API access to all.
+
+Should search for the perfect answer
+
+SYNCHRONOUS
+You are in a queue to get a movie ticket. You cannot get one until everybody in front of you gets one, and the same applies to the people queued behind you.
+ASYNCHRONOUS
+You are in a restaurant with many other people. You order your food. Other people can also order their food, they don't have to wait for your food to be cooked and served to you before they can order. In the kitchen restaurant workers are continuously cooking, serving, and taking orders. People will get their food served as soon as it is cooked.
+
+
+6)	Say something about JavaScript Encapsulation.
+
+
+
+7)	Say something about JavaScript Inheritance (Classical Versus Modern Inheritance).
+
+
+http://davidshariff.com/blog/javascript-inheritance-patterns/
+
+
+Browser HTTP request life cycle
+1.	User types an url in the address bar of the browser
+2.	Eg : http://www.aspspider.com/tutorials.aspx.
+3.	3 parts : the protocol  http
+   The server name  www.aspspider.com
+   The file name   tutorial.aspx
+4.	Browser communicates with the computer in the internet called “DNS- Domain Name System” to find out the IP address of the server i.e  www.aspspider.com
+5.	Browser establishes a connection to the web server at  that IP address
+6.	Server composes a request using specified url and sends the request to the web server to which it has established a connection.
+7.	The web server identifies the type of the page requested. If it is an asp.net web page, then browser knows that needs some processing by the asp.net service running as part of the web server.
+8.	The request is handed over to the asp.net service. The asp.net service processes the asp.net page and generates the html output.
+9.	Web server sends the requested page to the browser.
+10.	 When a response is received by the browser, it displays the web page to the user who typed the URL
+
+Desktop application: only one computer is involved in the whole process. You start an application in your computer and it runs in your computer.
+Web page application : But when you request a web page from your home computer, the request goes through several servers in the internet and finally it reaches a computer called 'Web Server'. The actual web page is processed in the web server.
