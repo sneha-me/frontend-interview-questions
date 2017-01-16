@@ -47,6 +47,11 @@ You are in a restaurant with many other people. You order your food. Other peopl
 
 7)	Say something about JavaScript Inheritance (Classical Versus Modern Inheritance).
 
+3 types of inheritance 
+ a) prototypal inheritance
+ b) functional inheritance
+ c) object inheritance
+
 
 http://davidshariff.com/blog/javascript-inheritance-patterns/
 
