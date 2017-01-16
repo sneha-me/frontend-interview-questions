@@ -61,6 +61,30 @@ http://davidshariff.com/blog/javascript-inheritance-patterns/
   The inner function has access not only to the outer function’s variables, but also to the outer function’s parameters. Note that the inner function cannot call the outer function’s arguments object, however, even though it can call the outer function’s parameters directly.
 
   You create a closure by adding a function inside another function.
+  
+  closures have access to the updated values of the outer function’s variables
+  
+  eg : 
+  <script>
+  function showName(firstName, lastName){
+	var defaultStr = "Your Name is ";
+
+	function makeFullName(){
+		document.write( defaultStr + firstName+" " +lastName);
+	}
+
+	return makeFullName();
+}
+
+showName("Sneha","Vantamuri");
+
+</script>
+
+9) when and why you need to use this keyword in javascript
+  we use the this keyword as a shortcut, a referent; it refers to an object; that is, the subject in context,
+  
+  The this reference ALWAYS refers to (and holds the value of) an object—a singular object—and it is usually used inside a function or a method, although it can be used outside a function in the global scope.
+  Note that when we use strict mode, this holds the value of undefined in global functions and in anonymous functions that are not bound to any object.
 Browser HTTP request life cycle
 1.	User types an url in the address bar of the browser
 2.	Eg : http://www.aspspider.com/tutorials.aspx.
