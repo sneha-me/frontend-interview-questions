@@ -92,6 +92,22 @@ showName("Sneha","Vantamuri");
   this inside the anonymous function cannot access the outer function’s this, so it is bound to the global window object, when strict mode is not being used.
   
   You can change the context of this using call(), apply() and bind() methods.
+  
+ 10) DOM manipulation – how to add, remove, move, copy, create, and find nodes.
+ 	add new node in javascript :
+ 		var para = document.createElement("p");
+		var node = document.createTextNode("This is new.");
+		para.appendChild(node);
+		
+	in JQuery :
+		var pg = $('<p></p>');
+		pg.html("This is a new paragraph added using JQuery");
+		$("#div2").append(pg);
+		
+		
+	COPY NODES: 
+	In JS: 
+	
 
 
 
