@@ -107,9 +107,29 @@ showName("Sneha","Vantamuri");
 		
 	COPY NODES: 
 	In JS: 
+	var dupNode = node.cloneNode(deep); deep : true - all child nodes and event listeners are also copied, 
+					    deep : false - child nodes are not cloned. Any text that the node contains is not cloned either, as it is contained in one or more child Text nodes.
+
+	in JQuery : 
+	var dupNode = $( ".hello" ).clone()
 	
-
-
+	REMOVE NODES:
+	In JS: 
+	var oldChild = node.removeChild(child);
+	
+	In JQuery:
+	.remove() --> removes the all the child elements along withthe element itself. It also removes all the attached events to it.
+	.empty() ---> removes all the child elements and the text inside teh matching element.
+	.detatch() --> same as remove() but it keeps the attached events for later use.
+	
+	
+	MOVE NODE :
+	appendChild()
+	
+	FIND NODE:
+		.childNodes, .querySelecterAll('.className');
+		
+		in JQUERY : $( "li.item-ii" ).find( "li" )
 
 
 
